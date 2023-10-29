@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <h1>Music Player</h1>
+
+    <div class="music-container">
+      <div class="image-container">
+        <img src="./images/Bass Loop.jpg" alt="" />
+      </div>
+
+      <div class="music-info">
+        <h4>Bass Loop</h4>
+        <div class="progress-container">
+          <div class="progress"></div>
+        </div>
+      </div>
+
+      <audio src="music/Bass Loop.mp3" id="audio"></audio>
+
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <!-- <img src="./images/bxs-skip-previous-circle.svg" alt="" /> -->
+          <i class='bx bxs-skip-previous-circle bx-sm'></i>
+        </button>
+        <button id="play" class="action-btn">
+          <!-- <img src="./images/bx-play-circle.svg" alt="" class="playing"/> -->
+          <i class='bx bx-play-circle bx-lg'></i>
+        </button>
+        <button id="next" class="action-btn">
+          <!-- <img src="./images/bxs-skip-next-circle.svg" alt="" /> -->
+          <i class='bx bxs-skip-next-circle bx-sm'></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
